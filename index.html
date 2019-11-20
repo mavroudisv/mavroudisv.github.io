@@ -24,9 +24,10 @@
 							<li class="nav-item">
 							<a class="nav-item-child" href="/">Home</a></li>
 							<li class="nav-item"><a class="nav-item-child" href="#news">News</a></li>
+							<li class="nav-item"><a class="nav-item-child" href="#projects">Projects</a></li>
 							<li class="nav-item"><a class="nav-item-child" href="#publications">Publications</a></li>
 							<li class="nav-item"><a class="nav-item-child" href="#talks">Talks</a></li>
-							<li class="nav-item"><a class="nav-item-child" href="#teaching">Service</a></li>						
+							<!--<li class="nav-item"><a class="nav-item-child" href="#service">Service</a></li>-->
 							<li class="nav-item"><a class="nav-item-child" href="#media">Media</a></li>
 							<li class="nav-item"><a class="nav-item-child" href="files/cv_mavroudisv.pdf">CV</a></li>
 						</ul>
@@ -161,7 +162,81 @@
 		</div>
 		
 		
-		<div class="content-md container style="display: block;">
+		<div class="" style="display: block;">
+			<div class="content-md container">
+				<h2 id="projects">Selected Projects <a style="color:#333;" href="https://github.com/mavroudisv/"><img src="img/icons/github.png" width="27" height="27"></a></h2>
+				<div class="row row-m-t">
+					<div class="col-sm-3"><br><br><a href="img/projects/embedding.png"><img alt="img" src="img/projects/embedding.png" class="img-responsive" width="200" height="200"></a></div>
+					<div class="col-sm-6" align="justify"> 
+						<p><strong><font size="4">Encrypted Traffic Classification using High-dimensional Embeddings</font></strong></p>
+						This project studies the resilience of encrypted-communications schemes against adversaries that try
+						to breach the privacy of individual users. For this purpose, we used deep neural network models to 
+						map encrypted traffic traces as high-dimensional representations (see figure on the left). This allowed us
+						to generate a database of labeled traces that we could then use to classify unlabeled samples based on
+						their proximity. Our results show that communication patterns suffice to reconstruct user activity with 
+						high accuracy and thus widely-deployed encrypted-communications systems offer weaker privacy guarantees 
+						than previously thought. This paper and the corresponding defence tools are currently under submission.
+					</div>			
+				</div>
+				<br><br><br>
+				<div class="row row-m-t">
+					<div class="col-sm-3"><br><br><a href="img/projects/probes.png"><img alt="img" src="img/projects/probes.png" class="img-responsive" width="200" height="200"></a></div>
+					<div class="col-sm-6" align="justify"> 
+						<p><strong><font size="4">Information Leakage Classification with Deep Neural Networks</font></strong></p>
+						Near-field microprobes have the capability to isolate small regions of a chip
+						surface and enable precise measurements with high spatial resolution. Being able
+						to distinguish the activity of small regions has given rise to attacks that exploit 
+						the spatial dependencies of cryptographic algorithms in order to recover the secret key. 
+						This project introduces a set of techniques that allow security researchers to evaluate
+						the leakage properties of any chip. Using deep neural network models, we are 
+						able to outperform previously proposed methods (e.g., difference of means, multivariate templates),
+						especially in the context of single-shot classification and small memory regions.
+						We validate the practicality of our proposed models by classifying the leakages from 
+						the SRAM of a modern ARM Cortex-M4 chip. Our results show that we were able to always				 
+						distinguish the activity between 2 SRAM regions of 128 bytes each, while for 256 SRAM 
+						single-byte regions we achieve 32% accuracy.
+						<p align="right">[<a href="https://eprint.iacr.org/2019/230">Paper</a>]</p>
+					</div>			
+				</div>
+				<br><br><br>
+				<div class="row row-m-t">
+					<div class="col-sm-3"><br><br><a href="img/projects/multiballot.png"><img alt="img" src="img/projects/multiballot.png" class="img-responsive" width="150" height="150"></a></div>
+					<div class="col-sm-6" align="justify"> 
+						<p><strong><font size="4">MultiBallot: A Scheme for Privacy-preserving, Verifiable Statistics</font></strong></p>
+						Processing sensitive data for scientific purposes has the potential to bring substantial benefits both to individuals and society, 
+						but requires strong guarantees that the data will not be used inappropriately. As more sensitive data is considered for processing 
+						(e.g., communication records and medical records), the needs for 1) effective ways to hold data processors accountable, 2) preserving
+						the privacy of individuals and 3) protect the integrity of their data are growing.
+						This work introduces MultiBallot, a privacy-preserving scheme that allows organizations to publish statistics derived from sensitive user
+						data without breaching the privacy of the individual data subjects. Our scheme is based on ThreeBallot, a paper-voting design that allows 
+						voters to verify both the result of the elections (univariate operation) and that their individual vote was counted towards it. Our work 
+						extends this scheme and enables users to compute multivariate statistics on the published data. Moreover, MultiBallot can provide strong data 
+						integrity guarantees and public verifiability, when combined with a high-integrity data structure (e.g., a blockchain). These additional
+						features make MultiBallot applicable in a wide range of data-processing scenarios such as healthcare statistics and communication record .
+						<p align="right">[<a href="https://arxiv.org/abs/1805.04772">Paper</a>]</p>
+					</div>			
+				</div>
+				<br><br><br>
+				<div class="row row-m-t">
+					<div class="col-sm-3"><br><br><a href="img/projects/protocol.png"><img alt="img" src="img/projects/protocol.png" class="img-responsive" width="200" height="200"></a></div>
+					<div class="col-sm-6" align="justify"> 
+						<p><strong><font size="4">Leakage-Resilient Design for Cryptographic Devices</font></strong></p>
+						Cryptographic devices used in critical applications operate under that assumption that hardware components 
+						remain always complaint with their specifications. If this assumption is invalid (e.g., components may contain
+						intentional or unintentional errors, bugs, hardware trojans, backdoors) then such systems do not reliably maintain 
+						their security properties. In this work, we challenge this perception and demonstrate how trusted, high-assurance 
+						hardware can be built from untrusted and potentially malicious components. We employ more than a hundred COTS secure
+						cryptocoprocessors, verified to FIPS140-2 Level 4 tamper-resistance standards, and use them to realize high-confidentiality random
+						number generation, key derivation, public key decryption and signing. Our experiments show a reasonable computational overhead
+						(less than 1% for both Decryption and Signing) and an exponential increase in backdoor-tolerance as more ICs are added.
+						<p align="right">[<a href="https://acmccs.github.io/papers/p1583-mavroudisA.pdf">Paper</a>] [<a href="https://github.com/OpenCryptoProject/Myst">Code</a>]</p>
+					</div>			
+				</div>					
+			</div>
+		</div>
+		
+		
+		<div class="bg-light" style="display: block;">
 			<div class="content-md container">
 				<div class="row">
 					<h2 id="publications">Publications <a style="color:#333;" href="https://scholar.google.com/citations?user=b10w74sAAAAJ"><img src="img/icons/scholar.png" width="27" height="27"></a></h2>
@@ -179,7 +254,7 @@
 					</blockquote>
 									      
 					<blockquote class="blockquote">
-						<a href="https://www.cl.cam.ac.uk/events/spw/2019/"> Market Manipulation as a Security Problem: The case of decentralized exchanges.</a>
+						<a href="https://www.cl.cam.ac.uk/events/spw/2019/"> Bounded Temporal Fairness for FIFO Financial Markets.</a>
 						<br><u>Mavroudis V.</u>, 26th International Workshop on Security Protocols, April 2019
 					</blockquote>
 					
@@ -268,7 +343,7 @@
 		</div>
 
 		
-		<div class="bg-light" style="display: block; overflow: auto;">
+		<div class="" style="display: block;">
 			<div class="content-md container">
 				<div class="row">
 					<h2 id="media">Media <a style="color:#333;" href="https://www.youtube.com/channel/UCti34A0wGEgbghqXC-rxPkQ"><img src="img/icons/yt.png" width="27" height="27"></a></h2>
@@ -325,10 +400,11 @@
 		</div>
 		
 		
-		<div class="content-md container" style="display: block;">
+		<div class="bg-light" style="display: block;">
 			<div class="content-md container">
 				<div class="row">
 					<h2 id="talks">Talks</h2>
+					<enlist class="enlist">Libra: Fair Order-Matching for Electronic Financial Exchanges., Juels Group Research Meeting, Online/Cornell University, New York, US, 29 October 2019. [<a href="http://juels.tech.cornell.edu/">Link</a>]</enlist>
 					<enlist class="enlist">Cryptographic Hardware from Untrusted Components, RISE Annual Conference, London, UK, 14 November 2018. [<a href="https://www.ukrise.org/wp-content/uploads/2018/10/Programme-Public-281018-RISE-Annual-Conference.docx.pdf">Link</a>]</enlist>
 					<enlist class="enlist">A touch of Evil: Cryptographic Hardware from Untrusted Components (poster), CSAW 2018, Valence, France, 9 November 2018.</enlist>
 					<enlist class="enlist">Cryptogame: Pirates & Guardians of the Galaxy, London, UK, 27 October 2018. [<a href="https://guidebook.com/guide/147793/event/21682603/">Link</a>]</enlist>
@@ -351,21 +427,21 @@
 			</div>
 		</div>
 
-		
-		<div class="bg-light" style="display: block; overflow: auto;">
+		<div class="" style="display: block;">
 			<div class="content-md container">
 				<div class="row">
-					<h2 id="teaching">Academic Service & Teaching</h2> 
+					<h2 id="service">Academic Service & Teaching</h2> 
 					<enlist class="enlist">Publications co-chair for the <a href="https://petsymposium.org/cfp19.php">Privacy Enhancing Technologies symposium 2019</a>.</enlist>
-					<enlist class="enlist">Co-organizing the <a href="http://www0.cs.ucl.ac.uk/staff/G.Stringhini/hacking.html">Hacking Seminars</a> at UCL (September 2017-present).</enlist>
-					<enlist class="enlist">Organizing the <a href="http://sec.cs.ucl.ac.uk/ace_csr/ace_seminars/">Information Security Seminars</a> at UCL (January 2017-present).</enlist>
-					<enlist class="enlist">External Reviewer for <a href="https://petsymposium.org/">Privacy Enhancing Technologies Symposium</a> (April 2017-present).</enlist>
+					<enlist class="enlist">Co-organizing the <a href="http://www0.cs.ucl.ac.uk/staff/G.Stringhini/hacking.html">Hacking Seminars</a> at UCL (2017-2018).</enlist>
+					<enlist class="enlist">Organizing the <a href="http://sec.cs.ucl.ac.uk/ace_csr/ace_seminars/">Information Security Seminars</a> at UCL (2017-2018).</enlist>
+					<enlist class="enlist">External Reviewer for <a href="https://petsymposium.org/">Privacy Enhancing Technologies Symposium</a> (2017-2019).</enlist>
 					<enlist class="enlist">Teaching Assistant for <a href="http://www.cs.ucl.ac.uk/current_students/syllabus_index_2016_2017/mscisec/ga01_computer_security_1/">Computer Security I</a> module, Information Security MSc (Winter term 2017-2018).</enlist>
 					<enlist class="enlist">Guest Lecture on Acedemic Research, <a href="http://in2scienceuk.org/">In2ScienceUK</a> Organization (August 2017).</enlist>
 					<enlist class="enlist">Teaching Assistant for <a href="http://www.cs.ucl.ac.uk/current_students/syllabus_index_2016_2017/mscisec/ga02_computer_security_2/">Computer Security II</a> module, Information Security MSc (Spring term 2016-2017).</enlist>
 				</div>
 			</div>
 		</div>
+
 
 	
 	<footer class="footer"></footer>
