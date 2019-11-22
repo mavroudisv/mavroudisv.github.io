@@ -169,11 +169,11 @@
 					<div class="col-sm-3"><br><br><a href="img/projects/embedding.png"><img alt="img" src="img/projects/embedding.png" class="img-responsive" width="200" height="200"></a></div>
 					<div class="col-sm-6" align="justify"> 
 						<p><strong><font size="4">Encrypted Traffic Classification using High-dimensional Embeddings</font></strong></p>
-						This project studies the resilience of encrypted-communications schemes against adversaries that try
-						to breach the privacy of individual users. For this purpose, we used deep neural network models to 
-						map encrypted traffic traces as high-dimensional representations (see figure on the left). This allowed us
-						to generate a database of labeled traces that we could then use to classify unlabeled samples based on
-						their proximity. Our results show that communication patterns suffice to reconstruct user activity with 
+						This project studies the resilience of encrypted-communications schemes against adversaries that intent
+						to breach the privacy of individual users. To evaluate widely-used schemes, we employ deep neural network 
+						models so as to map encrypted traffic traces into high-dimensional representations (see figure on the left). 
+						This enables us to generate a database of labeled traces that can then be used to classify unlabeled samples 
+						based on their proximity. Our results show that communication patterns suffice to reconstruct user activity with 
 						high accuracy and thus widely-deployed encrypted-communications systems offer weaker privacy guarantees 
 						than previously thought. This paper and the corresponding defence tools are currently under submission.
 					</div>			
@@ -188,8 +188,8 @@
 						to distinguish the activity of small regions has given rise to attacks that exploit 
 						the spatial dependencies of cryptographic algorithms in order to recover the secret key. 
 						This project introduces a set of techniques that allow security researchers to evaluate
-						the leakage properties of any chip. Using deep neural network models, we are 
-						able to outperform previously proposed methods (e.g., difference of means, multivariate templates),
+						the leakage properties of any chip. We show that deep neural network models
+						outperform previously proposed methods (e.g., difference of means, multivariate templates),
 						especially in the context of single-shot classification and small memory regions.
 						We validate the practicality of our proposed models by classifying the leakages from 
 						the SRAM of a modern ARM Cortex-M4 chip. Our results show that we were able to always				 
@@ -204,10 +204,10 @@
 					<div class="col-sm-6" align="justify"> 
 						<p><strong><font size="4">MultiBallot: A Scheme for Privacy-preserving, Verifiable Statistics</font></strong></p>
 						Processing sensitive data for scientific purposes has the potential to bring substantial benefits both to individuals and society, 
-						but requires strong guarantees that the data will not be used inappropriately. As more sensitive data is considered for processing 
-						(e.g., communication records and medical records), the needs for 1) effective ways to hold data processors accountable, 2) preserving
-						the privacy of individuals and 3) protect the integrity of their data are growing.
-						This work introduces MultiBallot, a privacy-preserving scheme that allows organizations to publish statistics derived from sensitive user
+						however, it also requires strong guarantees that the data will not be used inappropriately. This project attempts to address some of 
+						the open challenges in the area: 1) effective ways to hold data processors accountable, 2) preserving
+						the privacy of individuals and 3) protect the integrity of their data. For this purpose, we introduce MultiBallot, 
+						a privacy-preserving scheme that allows organizations to publish statistics derived from sensitive user
 						data without breaching the privacy of the individual data subjects. Our scheme is based on ThreeBallot, a paper-voting design that allows 
 						voters to verify both the result of the elections (univariate operation) and that their individual vote was counted towards it. Our work 
 						extends this scheme and enables users to compute multivariate statistics on the published data. Moreover, MultiBallot can provide strong data 
@@ -221,10 +221,10 @@
 					<div class="col-sm-3"><br><br><a href="img/projects/protocol.png"><img alt="img" src="img/projects/protocol.png" class="img-responsive" width="200" height="200"></a></div>
 					<div class="col-sm-6" align="justify"> 
 						<p><strong><font size="4">Leakage-Resilient Design for Cryptographic Devices</font></strong></p>
-						Cryptographic devices used in critical applications operate under that assumption that hardware components 
-						remain always complaint with their specifications. If this assumption is invalid (e.g., components may contain
-						intentional or unintentional errors, bugs, hardware trojans, backdoors) then such systems do not reliably maintain 
-						their security properties. In this work, we challenge this perception and demonstrate how trusted, high-assurance 
+						Cryptographic devices used in critical applications operate under the assumption that hardware components 
+						remain always compliant with their specifications. Consequently, components that contain intentional or 
+						unintentional errors (e.g., bugs, hardware trojans, backdoors) cannot reliably maintain any of their
+						security properties. In this work, we relax this strict correctness requirement and demonstrate how trusted, high-assurance 
 						hardware can be built from untrusted and potentially malicious components. We employ more than a hundred COTS secure
 						cryptocoprocessors, verified to FIPS140-2 Level 4 tamper-resistance standards, and use them to realize high-confidentiality random
 						number generation, key derivation, public key decryption and signing. Our experiments show a reasonable computational overhead
