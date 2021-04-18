@@ -472,7 +472,10 @@
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
 
-	  gtag('config', 'UA-19720634-1');
+	  gtag('config', 'UA-19720634-1', {
+	       'anonymize_ip': true,
+	       'client_storage': 'none'
+	  });
 	</script>
 
     </body>
