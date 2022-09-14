@@ -1,5 +1,5 @@
 
-Copyright (c) 2019-2021 Vasilios Mavroudis
+Copyright (c) 2019-2022 Vasilios Mavroudis
  
 All rights reserved.
 
